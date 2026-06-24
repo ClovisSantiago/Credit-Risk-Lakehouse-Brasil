@@ -12,4 +12,6 @@ Implementar boas práticas de modelagem dimensional para Analytics.
 Disponibilizar indicadores de negócio voltados para crédito e risco.
 Demonstrar integração entre Databricks e Power BI.
 
+ARQUITETURA:
+
 <img width="2996" height="2536" alt="image" src="https://github.com/user-attachments/assets/9b7763ca-f85b-451f-8414-64f6752fb571" />
