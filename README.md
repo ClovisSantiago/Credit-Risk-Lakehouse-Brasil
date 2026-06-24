@@ -12,6 +12,146 @@ Implementar boas práticas de modelagem dimensional para Analytics.
 Disponibilizar indicadores de negócio voltados para crédito e risco.
 Demonstrar integração entre Databricks e Power BI.
 
-ARQUITETURA:
+## Arquitetura:
 
-<img width="2996" height="2536" alt="image" src="https://github.com/user-attachments/assets/9b7763ca-f85b-451f-8414-64f6752fb571" />
+<img width="1797" height="1521" alt="image" src="https://github.com/user-attachments/assets/9b7763ca-f85b-451f-8414-64f6752fb571" />
+
+
+
+Dados Brutos (CSV)   
+        
+        │
+        ▼
+        
+ Bronze Layer
+(Ingestão dos dados)
+
+       │
+       ▼
+        
+ Silver Layer
+(Limpeza, padronização,
+regras de qualidade)
+        
+        │
+        ▼
+        
+ Gold Layer
+(Modelo dimensional
+e KPIs de negócio)
+        
+        │
+        ▼
+        
+ Power BI
+(Dashboards analíticos)
+
+
+
+## Tecnologias Utilizadas:
+
+Python;
+
+PySpark;
+
+Databricks;
+
+Delta Lake;
+
+SQL;
+
+Power BI;
+
+GitHub.
+
+## Modelo de Dados:
+
+### Dimensões
+
+Cliente;
+
+Produto de Crédito;
+
+Score de Risco;
+
+Tempo;
+
+## Fatos
+
+Contratos de Crédito;
+
+Pagamentos.
+
+## Indicadores Disponíveis
+
+Carteira de Crédito
+
+Valor total contratado
+
+Valor médio dos contratos
+
+Evolução da carteira
+
+Risco
+
+Taxa de inadimplência
+
+Contratos em atraso
+
+Inadimplência por faixa de score
+
+Inadimplência por região
+
+## Operação
+Contratos emitidos
+
+Pagamentos recebidos
+
+Dias médios de atraso
+
+Recuperação de crédito
+
+## Destaques Técnicos
+Implementação da arquitetura Medallion (Bronze, Silver e Gold)
+
+Tratamento de dados inconsistentes na camada Silver
+
+Padronização de formatos de datas, moedas e categorias
+
+Construção de modelo dimensional Star Schema
+
+Criação de métricas de risco e crédito para consumo analítico
+
+Desenvolvimento de dashboards executivos e operacionais no Power BI
+
+## Cenário Simulado
+
+O projeto representa uma fintech fictícia chamada CrediVision, especializada em crédito para pessoas físicas. O ambiente foi modelado para reproduzir desafios comuns do mercado financeiro, incluindo:
+
+Diferentes modalidades de crédito;
+
+Scores de risco;
+
+Atrasos de pagamento;
+
+Inadimplência;
+
+Qualidade de dados heterogênea;
+
+Necessidade de governança e rastreabilidade;
+
+## Competências Demonstradas
+
+Engenharia de Dados;
+
+Analytics Engineering;
+
+Data Quality;
+
+Modelagem Dimensional;
+
+Business Intelligence;
+
+Governança de Dados;
+
+Desenvolvimento de Pipelines de Dados.
