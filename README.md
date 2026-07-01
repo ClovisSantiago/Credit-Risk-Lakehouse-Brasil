@@ -19,7 +19,7 @@ Demonstrar integração entre Databricks e Power BI.
 
 
 
-Dados Brutos (CSV)   
+Dados Brutos (CSV) Bucket - S3   
         
         │
         ▼
