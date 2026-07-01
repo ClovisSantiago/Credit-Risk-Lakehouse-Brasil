@@ -14,7 +14,8 @@ Demonstrar integração entre Databricks e Power BI.
 
 ## Arquitetura:
 
-<img width="1797" height="1521" alt="image" src="https://github.com/user-attachments/assets/9b7763ca-f85b-451f-8414-64f6752fb571" />
+<img width="1797" height="1521" alt="DataBricks_Arquitetura_Medalhão drawio" src="https://github.com/user-attachments/assets/502c5048-3158-47d9-8655-ec0d473ba5ed" />
+
 
 
 
