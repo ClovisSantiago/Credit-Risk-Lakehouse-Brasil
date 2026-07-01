@@ -1,7 +1,7 @@
 # Credit-Risk-Lakehouse-Brasil
 Projeto de Engenharia e Análise de Dados baseado em arquitetura Lakehouse para monitoramento de risco de crédito, inadimplência e desempenho de uma carteira de crédito simulada.
 
-Este projeto foi desenvolvido com o objetivo de demonstrar competências modernas em Data Engineering, Analytics Engineering e Business Intelligence, utilizando uma arquitetura Medallion (Bronze, Silver e Gold) implementada em Databricks com PySpark, Delta Lake e Power BI.
+Este projeto foi desenvolvido com o objetivo de demonstrar competências modernas end-to-end em Data Engineering, Analytics Engineering e Business Intelligence, utilizando uma arquitetura Lakehouse-Medallion (Bronze, Silver e Gold) implementada em Databricks com PySpark, Delta Lake, SQL e Power BI.
 
 Os dados utilizados foram gerados sinteticamente para simular o ambiente operacional de uma fintech ou instituição financeira brasileira, contendo informações de clientes, contratos de crédito, scores de risco e pagamentos. O dataset foi propositalmente criado com inconsistências de nomenclatura, formatos e qualidade de dados para reproduzir desafios reais encontrados em projetos corporativos.
 
