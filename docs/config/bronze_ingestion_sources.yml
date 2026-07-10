@@ -1,0 +1,31 @@
+bronze_ingestion:
+  contratos:
+    source_path: s3://bucket/s3-databricks-integracao/dev-risk-credito-contratos/
+    target_table: bronze.fact_contratos_raw_s3
+    format: csv
+    mode: incremental
+  parcelas:
+    source_path: s3://bucket/s3-databricks-integracao/dev-risk-credito-parcelas/
+    target_table: bronze.fact_parcelas_raw_s3
+    format: csv
+    mode: incremental
+  pagamentos:
+    source_path: s3://bucket/s3-databricks-integracao/dev-risk-credito-pagamentos/
+    target_table: bronze.fact_pagamentos_raw_s3
+    format: csv
+    mode: incremental
+  cliente:
+    source_path: s3://bucket/s3-databricks-integracao/dev-risk-credito-dim-cliente/
+    target_table: bronze.dim_cliente_raw_s3
+    format: csv
+    mode: incremental
+  produto:
+    source_path: s3://bucket/s3-databricks-integracao/dev-risk-credito-dim-produto-credito/
+    target_table: bronze.dim_produto-credito_raw_s3
+    format: csv
+    mode: incremental    
+  score:
+    source_path: s3://bucket/s3-databricks-integracao/dev-risk-credito-dim-score/
+    target_table: bronze.dim_score_raw_s3
+    format: csv
+    mode: incremental        
