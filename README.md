@@ -13,10 +13,9 @@ Implementar boas práticas de modelagem dimensional para Analytics.
 Disponibilizar indicadores de negócio voltados para crédito e risco.
 Demonstrar integração entre Databricks e Power BI.
 
-## Arquitetura:
+## Credit Risk Lakehouse Architecture:
 
-<img width="1797" height="1521" alt="DataBricks_Arquitetura_Medalhão drawio (1)" src="https://github.com/user-attachments/assets/219ef499-a31f-45ee-8f81-b04d33c5e178" />
-
+<img width="1797" height="1521" alt="DataBricks_Arquitetura_Medalhão_Full drawio" src="https://github.com/user-attachments/assets/5a731d44-1a48-45bf-b555-0efd441642c9" />
 
 
 Dados Brutos (CSV) Bucket - S3   
