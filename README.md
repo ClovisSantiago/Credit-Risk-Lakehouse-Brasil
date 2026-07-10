@@ -1,5 +1,5 @@
 # Credit-Risk-Lakehouse-Brasil
-Projeto de Engenharia e Análise de Dados baseado em arquitetura Lakehouse para monitoramento de risco de crédito, inadimplência e desempenho de uma carteira de crédito simulada.
+Projeto de Engenharia e Análise de Dados baseado em arquitetura Lakehouse para monitoramento do desempenho de uma carteira de crédito simulada, risco de crédito e inadimplência.
 
 Este projeto foi desenvolvido com o objetivo de demonstrar competências modernas end-to-end em Data Engineering, Analytics Engineering e Business Intelligence, utilizando uma arquitetura Lakehouse-Medallion (Bronze, Silver e Gold) implementada em Databricks com PySpark, Delta Lake, SQL e Power BI.
 
@@ -14,8 +14,7 @@ Demonstrar integração entre Databricks e Power BI.
 
 ## Arquitetura:
 
-<img width="1797" height="1521" alt="DataBricks_Arquitetura_Medalhão drawio" src="https://github.com/user-attachments/assets/502c5048-3158-47d9-8655-ec0d473ba5ed" />
-
+<img width="1797" height="1521" alt="DataBricks_Arquitetura_Medalhão drawio (1)" src="https://github.com/user-attachments/assets/219ef499-a31f-45ee-8f81-b04d33c5e178" />
 
 
 
@@ -48,6 +47,31 @@ e KPIs de negócio)
 (Dashboards analíticos)
 
 
+## Bronze Layer - Automated Ingestion
+
+A camada Bronze foi implementada utilizando o recurso **Data Ingestion** do Databricks.
+
+Em vez de notebooks manuais, a ingestão foi configurada pela interface do Databricks para monitorar diretórios no Amazon S3 e criar/atualizar tabelas Delta automaticamente conforme novos arquivos CSV são adicionados.
+
+### Fontes monitoradas
+
+| Origem S3 | Tabela Bronze |
+|---|---|
+| `s3://.../s3-databricks-integracao/dev-risk-credito-contratos/` | `bronze.fact_contratos_raw_s3` |
+| `s3://.../s3-databricks-integracao/dev-risk-credito-parcelas/` | `bronze.fact_parcelas_raw_s3` |
+| `s3://.../s3-databricks-integracao/dev-risk-credito-pagamentos/` | `bronze.fact_pagamentos_raw_s3` |
+| `s3://.../s3-databricks-integracao/dev-risk-credito-dim-cliente/` | `bronze.dim_clinte_raw_s3` |
+| `s3://.../s3-databricks-integracao/dev-risk-credito-dim-produto-credito/` | `bronze.dim_produto_credito_raw_s3` |
+| `s3://.../s3-databricks-integracao/dev-risk-credito-dim-score/` | `bronze.dim_score_raw_s3` |
+
+### Características
+
+- Ingestão incremental de novos arquivos
+- Criação de tabelas Delta
+- Preservação dos dados brutos
+- Monitoramento de diretórios no S3
+- Separação entre arquivos históricos e arquivos incrementais
+
 
 ## Tecnologias Utilizadas:
 
@@ -79,38 +103,59 @@ Tempo;
 
 ## Fatos
 
-Contratos de Crédito;
+- Contratos de Crédito;
+- Parcelas;
+- Pagamentos.
 
-Pagamentos.
+## Perguntas de Negócio Respondidas
 
-## Indicadores Disponíveis
 
-Carteira de Crédito
+#### V1 - Plataforma + Dashboard Executive Overview
 
-Valor total contratado
+<img width="1538" height="860" alt="image" src="https://github.com/user-attachments/assets/c5597447-f468-42a9-81f1-bb895c9d986a" />
 
-Valor médio dos contratos
 
-Evolução da carteira
+#### Link do dashboard: https://app.powerbi.com/view?r=eyJrIjoiMThkZDhiNTMtYWY4ZS00ZmI3LTk2YmMtMTBjNDAwZTk0MGI0IiwidCI6ImZhYmM4MmMxLTkyZGItNDU0Ni05YzUyLTJmNjUzNjE2YjY0OCJ9
+Perguntas respondidas:
+- A carteira de crédito está crescendo?
+- Os novos contratos estão sendo originados com valores maiores ou menores?
+- Qual o volume total de crédito concedido no período?
+- O valor efetivamente recebido está de acordo com o valor esperado?
+- Qual o montante que ainda permanece em aberto?
+- A inadimplência está aumentando ao longo do tempo?
+- A taxa de default está melhorando ou piorando?
+- Como os principais indicadores da carteira evoluem mês a mês?
 
-Risco
+#### V2 — Risk Analytics
 
-Taxa de inadimplência
+Credit Risk Analysis - Módulo de Análise de Risco
 
-Contratos em atraso
+Perguntas respondidas:
 
-Inadimplência por faixa de score
+- Qual faixa de score concentra maior risco?
+- Qual score possui maior inadimplência?
+- Qual score apresenta maior índice de recebimento?
+- Onde está concentrado o saldo em aberto?
 
-Inadimplência por região
 
-## Operação
-Contratos emitidos
+#### V3 — Product Performance
 
-Pagamentos recebidos
+Perguntas respondidas:
 
-Dias médios de atraso
+- Qual produto gera maior receita?
+- Qual produto possui maior inadimplência?
+- Qual produto possui melhor índice de recebimento?
+- Ticket médio por modalidade.
 
-Recuperação de crédito
+#### V4 - Cohort Analysis (Safras)
+
+Perguntas respondidas:
+
+- As novas safras são melhores?
+- A inadimplência está aumentando nas novas originações?
+- Qual safra possui maior saldo em aberto?
+- Evolução das safras.
+
 
 ## Destaques Técnicos
 Implementação da arquitetura Medallion (Bronze, Silver e Gold)
