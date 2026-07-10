@@ -15,6 +15,8 @@ Demonstrar integração entre Databricks e Power BI.
 
 ## Credit Risk Lakehouse Architecture:
 
+<img width="757" height="751" alt="DataBricks_Arquitetura_Medalhão drawio" src="https://github.com/user-attachments/assets/92591626-c138-4486-83ad-271dfb3690fd" />
+
 <img width="1797" height="1521" alt="DataBricks_Arquitetura_Medalhão_Full drawio" src="https://github.com/user-attachments/assets/5a731d44-1a48-45bf-b555-0efd441642c9" />
 
 
