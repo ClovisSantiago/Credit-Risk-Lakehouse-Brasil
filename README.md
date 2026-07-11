@@ -115,7 +115,7 @@ Tempo;
 
 ![Relatorio PowerBI](./docs/img/power_bi_relatorio.png)
 
-#### Link do dashboard: https://app.powerbi.com/view?r=eyJrIjoiMThkZDhiNTMtYWY4ZS00ZmI3LTk2YmMtMTBjNDAwZTk0MGI0IiwidCI6ImZhYmM4MmMxLTkyZGItNDU0Ni05YzUyLTJmNjUzNjE2YjY0OCJ9
+#### Link do dashboard: [link do dashboard no Power BI](https://app.powerbi.com/view?r=eyJrIjoiMThkZDhiNTMtYWY4ZS00ZmI3LTk2YmMtMTBjNDAwZTk0MGI0IiwidCI6ImZhYmM4MmMxLTkyZGItNDU0Ni05YzUyLTJmNjUzNjE2YjY0OCJ9)
 Perguntas respondidas:
 - A carteira de crédito está crescendo?
 - Os novos contratos estão sendo originados com valores maiores ou menores?
