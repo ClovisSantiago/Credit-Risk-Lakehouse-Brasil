@@ -131,7 +131,7 @@ Perguntas respondidas:
 
 Credit Risk Analysis - Módulo de Análise de Risco
 
-Perguntas respondidas:
+Responderá:
 
 - Qual faixa de score concentra maior risco?
 - Qual score possui maior inadimplência?
@@ -139,18 +139,29 @@ Perguntas respondidas:
 - Onde está concentrado o saldo em aberto?
 
 
-#### V3 — Product Performance
+#### V3 — Payment Analytics
 
-Perguntas respondidas:
+Responderá:
+
+Quanto recebemos?
+Quanto deveríamos receber?
+Quantas parcelas estão em aberto?
+Quantos pagamentos ocorreram em atraso?
+Média de dias de atraso.
+
+
+#### V4 — Product Performance
+
+Responderá:
 
 - Qual produto gera maior receita?
 - Qual produto possui maior inadimplência?
 - Qual produto possui melhor índice de recebimento?
 - Ticket médio por modalidade.
 
-#### V4 - Cohort Analysis (Safras)
+#### V5 - Cohort Analysis (Safras)
 
-Perguntas respondidas:
+Responderá:
 
 - As novas safras são melhores?
 - A inadimplência está aumentando nas novas originações?
