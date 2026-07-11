@@ -15,34 +15,35 @@ Demonstrar integração entre Databricks e Power BI.
 
 ## Credit Risk Lakehouse Architecture:
 
+![Arquitetura Medalhão](./docs/img/arquitetura_medalhao_credit_risk_lakehouse.svg)
 
 
-Dados Brutos (CSV) Bucket - S3   
+- Dados Brutos (CSV) Bucket - S3   
         
         │
         ▼
         
- Bronze Layer
+ - Bronze Layer
 (Ingestão dos dados)
 
        │
        ▼
         
- Silver Layer
+ - Silver Layer
 (Limpeza, padronização,
 regras de qualidade)
         
         │
         ▼
         
- Gold Layer
+ - Gold Layer
 (Modelo dimensional
 e KPIs de negócio)
         
         │
         ▼
         
- Power BI
+ - Power BI
 (Dashboards analíticos)
 
 
