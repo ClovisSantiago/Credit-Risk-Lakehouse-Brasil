@@ -143,11 +143,11 @@ Responderá:
 
 Responderá:
 
-Quanto recebemos?
-Quanto deveríamos receber?
-Quantas parcelas estão em aberto?
-Quantos pagamentos ocorreram em atraso?
-Média de dias de atraso.
+- Quanto recebemos?
+- Quanto deveríamos receber?
+- Quantas parcelas estão em aberto?
+- Quantos pagamentos ocorreram em atraso?
+- Média de dias de atraso.
 
 
 #### V4 — Product Performance
@@ -170,17 +170,17 @@ Responderá:
 
 
 ## Destaques Técnicos
-Implementação da arquitetura Medallion (Bronze, Silver e Gold)
+- Implementação da arquitetura Medallion (Bronze, Silver e Gold)
 
-Tratamento de dados inconsistentes na camada Silver
+- Tratamento de dados inconsistentes na camada Silver
 
-Padronização de formatos de datas, moedas e categorias
+- Padronização de formatos de datas, moedas e categorias
 
-Construção de modelo dimensional Star Schema
+- Construção de modelo dimensional Star Schema
 
-Criação de métricas de risco e crédito para consumo analítico
+- Criação de métricas de risco e crédito para consumo analítico
 
-Desenvolvimento de dashboards executivos e operacionais no Power BI
+- Desenvolvimento de dashboards executivos e operacionais no Power BI
 
 ## Cenário Simulado
 
@@ -200,16 +200,16 @@ Necessidade de governança e rastreabilidade;
 
 ## Competências Demonstradas
 
-Engenharia de Dados;
+- Engenharia de Dados;
 
-Analytics Engineering;
+- Analytics Engineering;
 
-Data Quality;
+- Data Quality;
 
-Modelagem Dimensional;
+- Modelagem Dimensional;
 
-Business Intelligence;
+- Business Intelligence;
 
-Governança de Dados;
+- Governança de Dados;
 
-Desenvolvimento de Pipelines de Dados.
+- Desenvolvimento de Pipelines de Dados.
