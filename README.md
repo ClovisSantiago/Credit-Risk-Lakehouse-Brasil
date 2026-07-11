@@ -112,8 +112,8 @@ Tempo;
 
 #### V1 - Plataforma + Dashboard Executive Overview
 
-<img width="1538" height="860" alt="image" src="https://github.com/user-attachments/assets/c5597447-f468-42a9-81f1-bb895c9d986a" />
 
+![Relatorio PowerBI](./docs/img/power_bi_relatorio.png)
 
 #### Link do dashboard: https://app.powerbi.com/view?r=eyJrIjoiMThkZDhiNTMtYWY4ZS00ZmI3LTk2YmMtMTBjNDAwZTk0MGI0IiwidCI6ImZhYmM4MmMxLTkyZGItNDU0Ni05YzUyLTJmNjUzNjE2YjY0OCJ9
 Perguntas respondidas:
